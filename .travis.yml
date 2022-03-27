@@ -17,6 +17,10 @@ deploy:
   bucket_name: 'elasticbeanstalk-eu-central-1-297107986940'
   bucket_path: 'Docker-react'
   on:
-    branch: main
+    repo: Sumon-fa/docker-react
+
+    branches:
+      only:
+        - master
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
